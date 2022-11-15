@@ -8,9 +8,9 @@ class PrototypesController < ApplicationController
 
   def new
     @prototype = Prototype.new
-    unless @prototype.user_id == current_user.id
-      redirect_to new_user_session_path
-    end
+    # unless @prototype.user_id == current_user.id
+    #   redirect_to new_user_session_path
+    # end
   end
 
   def create
